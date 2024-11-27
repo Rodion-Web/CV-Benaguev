@@ -1,4 +1,4 @@
-/* Основные стили */
+/* Основные настройки */
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -8,13 +8,17 @@ body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased; /* Для лучшего отображения шрифтов в Safari */
   -moz-osx-font-smoothing: grayscale; /* Для Firefox на Mac */
-  overflow-x: hidden; /* Отключаем горизонтальный скроллинг */
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box; /* Устанавливаем box-sizing: border-box для всех элементов */
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  margin: 0;
 }
 
 /* ---------- Главный блок (#home) ---------- */
@@ -29,7 +33,7 @@ body {
   padding: 0 20px;
   overflow: hidden;
   -webkit-background-size: cover; /* Для Safari */
-  background-size: cover;
+  background-size: cover; /* Совместимость с другими браузерами */
 }
 
 #home h1 {
@@ -84,7 +88,6 @@ a.btn:hover {
   max-width: 800px;
 }
 
-/* Сетка с навыками */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +105,7 @@ a.btn:hover {
   border: 2px solid rgba(255, 204, 41, 0.5);
   flex: 1 1 150px;
   max-width: 200px;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease; /* Для старых Webkit-браузеров */
 }
 
 .skill-card:hover {
@@ -115,6 +119,7 @@ a.btn:hover {
   color: #ffcc29;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease; /* Для старых Webkit-браузеров */
 }
 
 .skill-card:hover .skill-icon {
