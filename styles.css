@@ -254,7 +254,7 @@ a.btn:hover {
 }
 
 /* Плавающие анимации */
-.contact-section::before {
+/* .contact-section::before {
   content: "";
   position: absolute;
   top: -100px;
@@ -276,7 +276,7 @@ a.btn:hover {
   background: rgba(255, 204, 41, 0.1);
   border-radius: 50%;
   animation: floating 12s infinite ease-in-out alternate-reverse;
-}
+} */
 
 @keyframes floating {
   0% {
