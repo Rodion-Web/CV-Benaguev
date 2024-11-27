@@ -6,17 +6,15 @@ body {
   color: white;
   background-color: #0a2239;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; /* Для лучшего отображения шрифтов в Safari */
+  -moz-osx-font-smoothing: grayscale; /* Для Firefox на Mac */
+  overflow-x: hidden; /* Отключаем горизонтальный скроллинг */
 }
 
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h5 {
-  margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Устанавливаем box-sizing: border-box для всех элементов */
 }
 
 /* ---------- Главный блок (#home) ---------- */
@@ -30,6 +28,8 @@ h5 {
   text-align: center;
   padding: 0 20px;
   overflow: hidden;
+  -webkit-background-size: cover; /* Для Safari */
+  background-size: cover;
 }
 
 #home h1 {
@@ -50,11 +50,13 @@ a.btn {
   padding: 12px 24px;
   border-radius: 30px;
   transition: background 0.3s ease, transform 0.3s ease;
+  -webkit-transition: background 0.3s ease, transform 0.3s ease; /* Для старых Webkit-браузеров */
 }
 
 a.btn:hover {
   background: linear-gradient(135deg, #ff4081, #ffcc29);
   transform: translateY(-5px);
+  -webkit-transform: translateY(-5px); /* Для старых Webkit-браузеров */
 }
 
 /* ---------- Блок "Обо мне" ---------- */
@@ -82,6 +84,7 @@ a.btn:hover {
   max-width: 800px;
 }
 
+/* Сетка с навыками */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
