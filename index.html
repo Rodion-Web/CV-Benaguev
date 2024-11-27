@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Родиона Бенагуева</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+
+<!-- Навигация -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-aos="fade-down">
+    <div class="container">
+        <a class="navbar-brand" href="#">Родион Бенагуев</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Главный блок с параллаксом -->
+<section id="home" class="vh-100 d-flex align-items-center text-center bg-dark text-white">
+    <div class="parallax" id="parallax-background"></div>
+    <div class="container">
+        <h1 class="display-4" id="hero-title">Родион Бенагуев</h1>
+        <p class="lead" id="hero-subtitle">Web-разработчик | Frontend | Digital-специалист</p>
+        <a href="#projects" class="btn btn-primary btn-lg">Посмотреть проекты</a>
+    </div>
+</section>
+
+<!-- Обо мне -->
+<section id="about" class="py-5 about-section">
+    <div class="container">
+        <div class="row align-items-center" data-aos="fade-up">
+            <!-- Описание профиля -->
+            <div class="col-lg-6 mb-4">
+                <h2 class="mb-4 text-3d">Обо мне</h2>
+                <p class="profile-text">Я — <span class="highlight">Родион Бенагуев</span>, web-разработчик с опытом работы в создании адаптивных интерфейсов и интерактивных решений.</p>
+                <p>Стараюсь всегда использовать современные технологии и следовать лучшим практикам в разработке. Люблю работать над проектами, которые решают задачи пользователей и впечатляют их дизайном.</p>
+            </div>
+
+            <!-- Навыки с иконками -->
+            <div class="col-lg-6">
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h5>Python</h5>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                        <i class="fab fa-figma skill-icon"></i>
+                        <h5>Figma</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Блок "Проекты" -->
+<section id="projects" class="py-5 project-section">
+    <div class="container">
+        <h2 class="mb-5 text-3d text-center" data-aos="fade-up">Проекты</h2>
+        <div class="row">
+            <!-- Карточка проекта 1 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/cfe_project.jpg" class="project-image" alt="Проект CFE">
+                    </div>
+                    <div class="project-content">
+                        <h5 class="project-title">CFE</h5>
+                        <p class="project-description">Одностраничное приложение для контроля финансов.</p>
+                        <a href="https://rodion-web.github.io/CFE/" target="_blank" class="btn project-btn">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка проекта 2 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/forum_h2_project.jpg" class="project-image" alt="Проект Forum-H2">
+                    </div>
+                    <div class="project-content">
+                        <h5 class="project-title">Forum-H2</h5>
+                        <p class="project-description">Интерактивный форум с возможностью общения и обмена данными.</p>
+                        <a href="https://rodion-web.github.io/Forum-H2/" target="_blank" class="btn project-btn">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 3 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/Quattr_Group_main.jpg" class="project-image" alt="Проект Forum-H2">
+                    </div>
+                    <div class="project-content">
+                        <h5 class="project-title">Quattr Group(main page)</h5>
+                        <p class="project-description">Комплексная, уникальная услуга предоставляемая компанией Quattr Group.</p>
+                        <a href="https://rodion-web.github.io/Intership-main-page/" target="_blank" class="btn project-btn">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 4 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/Quattr_Group_objects.jpg" class="project-image" alt="Проект Forum-H2">
+                    </div>
+                    <div class="project-content">
+                        <h5 class="project-title">Quattr Group(objects)</h5>
+                        <p class="project-description">Комплексная, уникальная услуга предоставляемая компанией Quattr Group.</p>
+                        <a href="https://rodion-web.github.io/Intership-other-page/" target="_blank" class="btn project-btn">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="img/Quattr_Group_main.jpg" class="card-img-top" alt="Quattr Group">
+                    <div class="card-body">
+                        <h5 class="card-title"> Quattr Group(main page)</h5>
+                        <a href="https://rodion-web.github.io/Intership-main-page/" target="_blank" class="btn btn-light">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="img/Quattr_Group_objects.jpg" class="card-img-top" alt="Quattr Group">
+                    <div class="card-body">
+                        <h5 class="card-title"> Quattr Group(objects)</h5>
+                        <a href="https://rodion-web.github.io/Intership-other-page/" target="_blank" class="btn btn-light">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Контакты -->
+<section id="contact" class="py-5 contact-section">
+    <div class="container text-center">
+        <h2 class="mb-5 text-3d" data-aos="fade-up">Контакты</h2>
+        <div class="row justify-content-center">
+            <!-- Карточка с телефоном -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <h5>Позвоните мне</h5>
+                    <p><a href="tel:+79167172417">+7 (916) 717-2417</a></p>
+                </div>
+            </div>
+            <!-- Карточка с почтой -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h5>Напишите мне</h5>
+                    <p><a href="mailto:benaguev.rodion@mail.ru">benaguev.rodion@mail.ru</a></p>
+                </div>
+            </div>
+            <!-- Карточка с GitHub -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-card">
+                    <i class="fab fa-github contact-icon"></i>
+                    <h5>Мой GitHub</h5>
+                    <p><a href="https://github.com/rodion-web" target="_blank">rodion-web</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
