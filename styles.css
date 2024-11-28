@@ -82,8 +82,11 @@ a.btn:hover {
   font-weight: 700;
   color: #ffcc29;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
-
+.about-section p {
+  text-align: center;
+}
 .profile-text {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -96,7 +99,13 @@ a.btn:hover {
   background: linear-gradient(135deg, #1e2a47, #0a2239);
   color: white;
 }
-
+.experience-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffcc29;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
 /* Карточка опыта работы */
 .experience-card {
   background: rgba(255, 255, 255, 0.1);
@@ -439,6 +448,10 @@ a.btn:hover {
     font-size: 2rem;
   }
 
+  .experience-section h2 {
+    font-size: 2rem;
+  }
+
   .skills-grid {
     flex-direction: row;
   }
@@ -477,7 +490,13 @@ a.btn:hover {
   .about-section h2 {
     font-size: 1.8rem;
   }
+  .experience-section h2 {
+    font-size: 1.8rem;
+  }
 
+  .skills-section h2 {
+    font-size: 1.8rem;
+  }
   .skills-grid {
     flex-direction: row;
     flex-wrap: wrap;
