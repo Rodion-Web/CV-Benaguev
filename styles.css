@@ -514,7 +514,7 @@ a.btn:hover {
 }
 
 .image-modal img.small-image {
-  max-width: 20%;
+  max-width: 30%;
 }
 
 @media (max-width: 576px) {
@@ -523,7 +523,12 @@ a.btn:hover {
     gap: 10px;
   }
   .image-modal img {
-    margin-top: 50%;
+    margin-top: 40%;
+    max-width: 80%;
+  }
+  .image-modal img.small-image {
+    max-width: 85%;
+    margin-top: 20%;
   }
 }
 

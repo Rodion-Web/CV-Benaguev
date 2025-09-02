@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-
 
 <body>
     <!-- Навигация -->
@@ -432,20 +431,20 @@
                 <!-- Сертификат 1 -->
                 <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="certificate-card">
-                        <img src="img/diplom1.jpg" class="certificate-image" alt="Сертификат 1">
+                        <img src="./img/diplom1.jpg" class="certificate-image" alt="Сертификат 1">
                     </div>
                 </div>
                 <!-- Сертификат 2 -->
                 <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="certificate-card">
-                        <img src="img/diplom2.jpg" class="certificate-image" alt="Сертификат 2">
+                        <img src="./img/diplom2.jpg" class="certificate-image" alt="Сертификат 2">
                     </div>
                 </div>
                 <!-- Сертификат 3 -->
                 <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="certificate-card">
-                        <img src="img/intership.jpg" class="certificate-image" alt="Сертификат 3"
-                            data-full="img/intership(vertical).jpg" data-size="small">
+                        <img src="./img/intership.jpg" class="certificate-image" alt="Сертификат 3"
+                            data-full="./img/intership(vertical).jpg" data-size="small">
                     </div>
                 </div>
             </div>
@@ -571,7 +570,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="scripts.js?v=<?php echo filemtime('scripts.js'); ?>"></script>
 
 </body>
 
