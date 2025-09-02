@@ -498,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Карточка проекта 5 -->
+                <!-- Карточка проекта 5
                 <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-card">
                         <div class="project-image-wrapper">
@@ -510,7 +510,7 @@
                                 проект</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
