@@ -457,14 +457,11 @@ a.btn:hover {
 }
 
 .certificate-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid rgba(255, 204, 41, 0.5);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certificate-card:hover {
@@ -474,31 +471,59 @@ a.btn:hover {
 
 .certificate-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  display: block;
+}
+/* ---------- Модальное окно для изображений ---------- */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.certificate-content {
-  padding: 20px;
-  text-align: center;
+.image-modal img {
+  margin: auto;
+  display: block;
+  max-width: 40%;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 204, 41, 0.7);
 }
 
-.certificate-title {
-  font-size: 1.3rem;
-  font-weight: 700;
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.close-modal:hover {
   color: #ffcc29;
-  margin-bottom: 10px;
 }
 
-.certificate-description {
-  font-size: 1rem;
-  color: white;
+.image-modal img.small-image {
+  max-width: 20%;
 }
 
 @media (max-width: 576px) {
   .contact-grid {
     flex-direction: column;
     gap: 10px;
+  }
+  .image-modal img {
+    margin-top: 50%;
   }
 }
 

@@ -32,3 +32,46 @@ document.addEventListener("DOMContentLoaded", function () {
     wrap: true, // Возврат к первому слайду после последнего
   });
 });
+
+// Открытие сертификата в полный экран
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close-modal");
+
+  document.querySelectorAll(".certificate-image").forEach((img) => {
+    img.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImg.src = this.dataset.full ? this.dataset.full : this.src;
+
+      modalImg.classList.remove("small-image");
+      if (this.dataset.size === "small") {
+        modalImg.classList.add("small-image");
+      }
+    });
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  modal.onclick = function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+});
+
+// Автоматическое закрытие меню при клике на ссылку (для мобильных)
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: true,
+      });
+    });
+  });
+});
